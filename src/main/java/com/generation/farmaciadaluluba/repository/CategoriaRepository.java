@@ -9,6 +9,6 @@ import com.generation.farmaciadaluluba.model.Categoria;
 
 public interface CategoriaRepository extends JpaRepository <Categoria, Long>{
 
-	List<Categoria> findAllByTemaContainingIgnoreCase (@Param("tema") String tema);
+	List<Categoria> findAllByCategoriaContainingIgnoreCase (@Param("categoria") String categoria);
 
 }

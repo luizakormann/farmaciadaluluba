@@ -21,7 +21,7 @@ public class Categoria {
 	@Column(length = 100)
 	@NotBlank(message = "Defina a categoria!")
 	@Size(min = 5, max = 100, message = "A categoria deve conter no mínimo 5 e no máximo 100 caractéres.")
-	private String tema;
+	private String categoria;
 
 	public long getId() {
 		return id;
@@ -31,12 +31,12 @@ public class Categoria {
 		this.id = id;
 	}
 
-	public String getTema() {
-		return tema;
+	public String getCategoria() {
+		return categoria;
 	}
 
-	public void setTema(String tema) {
-		this.tema = tema;
+	public void setTema(String categoria) {
+		this.categoria = categoria;
 	}
 
 }
